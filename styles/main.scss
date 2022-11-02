@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #11795f;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1400px;
+  padding: 0 25px 0 25px;
+}
+
+p,
+span,
+a {
+  font-family: 'Poppins';
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    padding: 0;
+  }
+}

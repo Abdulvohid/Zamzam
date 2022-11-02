@@ -5,7 +5,7 @@ import { uz } from './uz'
 export const vueI18n = {
   locales: ['en', 'ru', 'uz'],
 
-  defaultLocale: 'ru',
+  defaultLocale: 'uz',
 
   vueI18n: {
     fallbackLocale: 'en',
