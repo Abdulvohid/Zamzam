@@ -1,18 +1,21 @@
 <template>
   <div>
-
-
-
-<LangButton/>
-
-<h2>{{ $t('hello') }}</h2>
-</div>
-
+    <TestComponent/>
+    <Header/>
+    <TourInfo/>
+    <TourAbout/>
+    <OnlinePayment/>
+    <Footer/>
+  </div>
 </template>
 
 <script>
 export default {
   name: 'IndexPage',
-  components: 'LangButton'
+  components: 'Header,Tours ',
 }
 </script>
+
+<style>
+@import url(../styles/main.scss);
+</style>
