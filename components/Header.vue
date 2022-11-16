@@ -28,31 +28,40 @@ export default {
       <div class="container">
         <header>
           <div class="logo">
-            <a href="/">
+            <NuxtLink to="/">
               <img src="../assets/images/logo.png" alt="" />
-            </a>
+            </NuxtLink>
           </div>
           <nav class="nav">
             <ul>
               <li>
-                <a href="tel:+998916191900">+998916191900</a>
+                <NuxtLink to="/">
+                  {{ $t('visa') }}
+                </NuxtLink>
               </li>
               <li>
-                <a href="/"> {{ $t('visa') }}</a>
+                <NuxtLink to="/payment">
+                  {{ $t('payment') }}
+                </NuxtLink>
+              </li>
+
+              <li>
+                <NuxtLink to="/">
+                  {{ $t('contact') }}
+                </NuxtLink>
               </li>
               <li>
-                <a href="/"> {{ $t('payment') }}</a>
-              </li>
-              <li>
-                <a href="/"> {{ $t('contact') }}</a>
-              </li>
-              <li>
-                <a href="/"> {{ $t('info') }}</a>
+                <NuxtLink to="/">
+                  {{ $t('info') }}
+                </NuxtLink>
               </li>
               <li>
                 <NuxtLink to="/about">
                   <a href="/"> {{ $t('about') }} </a>
                 </NuxtLink>
+              </li>
+              <li>
+                <a href="tel:+998916191900">+998916191900</a>
               </li>
             </ul>
             <LangButton />
@@ -74,16 +83,25 @@ export default {
             </button>
             <ul>
               <li>
-                <a href="/"> {{ $t('visa') }}</a>
+                <NuxtLink to="/">
+                  {{ $t('visa') }}
+                </NuxtLink>
               </li>
               <li>
-                <a href="/"> {{ $t('payment') }}</a>
+                <NuxtLink to="/payment">
+                  {{ $t('payment') }}
+                </NuxtLink>
+              </li>
+
+              <li>
+                <NuxtLink to="/">
+                  {{ $t('contact') }}
+                </NuxtLink>
               </li>
               <li>
-                <a href="/"> {{ $t('contact') }}</a>
-              </li>
-              <li>
-                <a href="/"> {{ $t('info') }}</a>
+                <NuxtLink to="/">
+                  {{ $t('info') }}
+                </NuxtLink>
               </li>
               <li>
                 <NuxtLink to="/about">
@@ -95,7 +113,7 @@ export default {
               </li>
             </ul>
           </div>
-          <div style="display:flex">
+          <div style="display: flex">
             <LangButton />
             <button class="hamburger" v-if="open" @click="openButton()">
               <svg
@@ -158,7 +176,7 @@ export default {
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .hero {
   background-image: url('../assets/images/banner.png');
   background-repeat: no-repeat;
